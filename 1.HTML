@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Vs Games (PvG)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to bottom right, #0e0e0e, #1a1a1a);
+      color: #f1f1f1;
+    }
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #e84118;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    header h1 {
+      margin: 0;
+      color: #e84118;
+      font-size: 2.5em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #1e1e1e;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #f1f1f1;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e84118;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1.5s ease-in;
+    }
+    h2 {
+      color: #e84118;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+    }
+    .video-container iframe {
+      width: 100%;
+      height: 400px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+    input, textarea {
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+    button {
+      background-color: #e84118;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #ff5733;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 20px;
+      background: #e84118;
+      padding: 10px 20px;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .cta:hover {
+      background: #ff5733;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      color: #888;
+    }
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+      .video-container iframe {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Player Vs Games</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#episodes">Episodes</a>
+    <a href="#challenges">Challenges</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>What is PvG?</h2>
+    <p>PvG is a Hindi survival gaming show where we turn mobile games into real-life style missions. PUBG, Free Fire, COD — everything gets the Man vs Wild treatment.</p>
+    <a href="#episodes" class="cta">Watch Now</a>
+  </section>
+
+  <section id="episodes">
+    <h2>Latest Episode</h2>
+    <div class="video-container" style="background-color: #222; height: 400px; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 1.2em; text-align: center; padding: 20px;">
+      <p>🎮 Coming Soon...<br>Our first survival mission is being prepared. Stay tuned!</p>
+    </div>
+  </section>
+
+  <section id="challenges">
+    <h2>Submit Your Fan Challenge</h2>
+    <p>Got a savage survival mission in mind? Send it to us — your idea might be featured in the next episode!</p>
+    <form action="#">
+      <input type="text" placeholder="Your Name" required>
+      <input type="text" placeholder="Challenge Title" required>
+      <textarea rows="4" placeholder="Describe your challenge..." required></textarea>
+      <button type="submit">Submit Challenge</button>
+    </form>
+  </section>
+
+  <section id="about">
+    <h2>Who Are We?</h2>
+    <p>We are HSM (Hyper Sonic Minds) — the creators of the PvG show. Our company is the biggest entertainment studio in the world. Bigger than any website you’ve ever seen. PvG will not only entertain you — it will thrill you in every mission.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📺 YouTube:
+      <a href="https://www.youtube.com/channel/UCeal2J-WnPDR0wRghVGVfIg" target="_blank" style="color: #e84118; text-decoration: none;">
+        PvG Official Channel
+      </a>
+    </p>
+    <p>📘 Facebook: /PvGofficial</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Player Vs Games | Powered by HSM
+  </footer>
+
+</body>
+</html>
